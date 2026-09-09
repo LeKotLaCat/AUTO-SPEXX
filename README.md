@@ -19,9 +19,10 @@ PROXY_API_KEY=speexx-proxy-key
 # ใส่ Gemini API Key ของคุณ (หากใช้ Proxy ที่ส่งต่อไปยัง Google Gemini)
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
-3. **การทำงานร่วมกับ Proxy:**
-   - โปรแกรมมีระบบ **Auto-Startup**: เมื่อรัน main.py หรือเลือกเมนูทดสอบ หากตรวจพบว่า Proxy ยังไม่ทำงาน ระบบจะพยายามเริ่มต้น Proxy ให้โดยอัตโนมัติ
-   - หรือหากต้องการรัน Proxy เองล่วงหน้า สามารถสั่งรัน Proxy server ให้อยู่บน http://localhost:8000
+3. **การทำงานร่วมกับ Proxy (Bundled ในตัว Clone ครั้งเดียวจบ):**
+   - โฟลเดอร์ `antigravity_Proxy/` ถูกรวมไว้ในโปรเจกต์นี้ให้เรียบร้อยแล้ว
+   - **รันอัตโนมัติ (Auto-Startup)**: เมื่อรัน `main.py` หรือเลือกเมนูทดสอบ หากตรวจพบว่า Proxy ยังไม่ทำงาน ตัวโปรแกรมจะสร้าง `.env` ของ Proxy และเปิดเซิร์ฟเวอร์ขึ้นมาให้เองทันที
+   - **หรือสั่งรัน Proxy ล่วงหน้า**: เพียงดับเบิ้ลคลิก `start_proxy.bat` ที่โฟลเดอร์หลัก หรือรันผ่าน Docker Compose (`docker-compose up` ในโฟลเดอร์ `antigravity_Proxy`)
 
 ---
 

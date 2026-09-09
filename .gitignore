@@ -1,4 +1,4 @@
-﻿# =======================================================
+# =======================================================
 # Python & Virtual Environment
 # =======================================================
 .env
@@ -53,6 +53,14 @@ scratch/
 Thumbs.db
 
 # =======================================================
-# Antigravity Proxy Git Exclusions
+# Antigravity Proxy Specific Exclusions
 # =======================================================
-antigravity_Proxy/
+antigravity_Proxy/.env
+antigravity_Proxy/.env.*
+!antigravity_Proxy/.env.example
+antigravity_Proxy/.venv/
+antigravity_Proxy/venv/
+antigravity_Proxy/.pytest_cache/
+antigravity_Proxy/__pycache__/
+antigravity_Proxy/session.json
+antigravity_Proxy/data/
