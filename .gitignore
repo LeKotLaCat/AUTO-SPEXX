@@ -1,0 +1,58 @@
+﻿# =======================================================
+# Python & Virtual Environment
+# =======================================================
+.env
+.env.*
+!.env.example
+!.env.template
+venv/
+.venv/
+env/
+ENV/
+*.bak
+*.multichoice_bak
+*.toggle_bak
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.class
+
+# =======================================================
+# Logs & Diagnostic Dumps
+# =======================================================
+logs/
+*.log
+diagnose*
+diagnose_output*.txt
+
+# =======================================================
+# Browser Profiles & Sessions (Playwright / Chromium data)
+# =======================================================
+browser_profile/
+browser_profile_session/
+browser_profile*/
+*.session
+*.tmp
+
+# =======================================================
+# Solver Caches & Local State
+# =======================================================
+speexx_memory.json
+scratch/
+.pytest_cache/
+
+# =======================================================
+# IDEs & System Files
+# =======================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# =======================================================
+# Antigravity Proxy Git Exclusions
+# =======================================================
+antigravity_Proxy/
